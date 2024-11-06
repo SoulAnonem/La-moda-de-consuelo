@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Moda de Consuelo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="Iniciarsess.css">
+</head>
+<body>
+    <header>
+        <!-- Barra superior con el mensaje de visita -->
+        <div class="top-bar">
+            <span>Recuerda Visitar Nuestra Tienda Física</span>
+            <a href="https://tupagina.com/producto1.html" class="producto-link">Ubicada AQUÍ</a>
+        </div>
+
+        <!-- Barra de navegación principal -->
+        <div class="navbar">
+            <div class="navbar-left">
+                <button class="menu-icon" onclick="toggleMenu()">&#9776;</button>
+                <div class="search-bar">
+                    <input type="text" placeholder="Buscar">
+                    <button class="search-icon">&#128269;</button>
+                </div>
+            </div>
+            <div class="navbar-center">
+                <!--Ruta base para ir a otras páginas comienza con ""..""-->
+                <a href="../Quienes Somos/quienesomo.html" class="producto-link">Quienes Somos</a>
+                <span class="divider">|</span>
+                <a href="https://tupagina.com/producto1.html" class="producto-link">Catálogo</a>
+                <span class="divider">|</span>
+                <a href="https://tupagina.com/producto1.html" class="producto-link">Tallas</a>
+                <span class="divider">|</span>
+                <a href="https://tupagina.com/producto1.html" class="producto-link">Contactanos</a>
+            </div>
+            <div class="navbar-right logo-container">
+                <a href="../Cuenta InicioSesion/IniciarSes.html" class="producto-link">
+                <img src="Imagenesss/GGypAEEXUAAtfTa.jpg" alt="Logo" class="logo-icon">
+                </a>
+            </div>
+        </div>
+    </header>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- Formulario -->
+    <div class="form-container">
+        <h2 class="welcome-title">Bienvenido</h2>
+        <p class="register-text">¿No tienes una cuenta? <a href="../Cuenta Registrarse/crearCuenta.html">Regístrate gratis AQUÍ</a></p>
+        <div class="form-box">
+            <form>
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" placeholder="chuicobenja@hotmail.hola">
+                
+                <label for="password">Clave</label>
+                <input type="password" id="password" placeholder="*******">
+                
+                <div class="forgot-password">
+                    <a href="../Cuenta OlvidarContra/OlvideContra.html">¿Olvidaste tu contraseña?</a>
+                </div>
+
+                <button type="submit">Ingresar</button>
+            </form>
+        </div>
+    </div>
+  
+    <!-- Rectángulo rosa al final de la página -->
+    <div class="footer-bar"></div>
+
+    <!-- Menú lateral -->
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
+        <a href="#"><i class="fab fa-instagram"></i> Redes Sociales</a>
+        <a href="#"><i class="fas fa-life-ring"></i> Necesitas Ayuda</a>
+        <a href="#"><i class="fas fa-file-contract"></i> Términos y Condiciones</a>
+        <a href="#"><i class="fas fa-envelope"></i> Contacto</a>
+    </div>
+
+    <!-- Script de JavaScript -->
+    <script src="Scrippsts/SiniciarSes.js"></script>
+</body>
+</html>

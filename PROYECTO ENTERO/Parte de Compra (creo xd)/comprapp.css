@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+.producto-detalle {
+    display: flex;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.imagenes-miniatura {
+    display: flex;
+    justify-content: center; /* Centramos las miniaturas */
+    gap: 10px; /* Espacio de 1 cm entre las miniaturas */
+    margin-top: 10px;
+}
+
+.imagenes-miniatura img {
+    width: 90px; /* Tamaño de las miniaturas */
+    height: 90px;
+    object-fit: contain; /* Se ajustan sin recortarse */
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    padding: 5px;
+}
+
+.imagen-principal {
+    position: relative;
+    width: 100%; /* La imagen principal ocupará todo el ancho disponible */
+    max-width: 500px; /* Establecer un ancho máximo para la imagen principal */
+    margin: 0 auto; /* Centrar la imagen principal */
+}
+
+.imagen-principal img {
+    width: 100%; /* La imagen se ajustará al ancho disponible */
+    object-fit: contain; /* Mantiene las proporciones sin recortar */
+    border-radius: 10px;
+    opacity: 0; /* Inicia oculta */
+    transition: opacity 1s ease-in-out; /* Transición suave de 1 segundo */
+}
+
+.imagen-principal img.show {
+    opacity: 1; /* Aparecerá cuando se añada la clase 'show' */
+}
+
+.informacion-producto {
+    width: 50%;
+    padding-left: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #a64d79;
+    font-size: 2.5em;
+}
+
+.tallas button, .cantidad-btn {
+    padding: 10px 15px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+}
+
+.tallas button:hover, .cantidad-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.colores {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.colores .color {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    cursor: pointer;
+}
+
+.cantidad {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cantidad input {
+    width: 50px;
+    text-align: center;
+    font-size: 1em;
+    margin: 0 10px;
+}
+
+.agregar-carrito {
+    background-color: #a64d79;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.agregar-carrito:hover {
+    background-color: #e699b2;
+}
+
+/*ESTO ES PARA AGRANDA LEVEMENTE, MUY IMPORTANTE !!!!!*/
+
+.producto-link img {
+    transition: transform 0.3s ease; /* Efecto de transición suave */
+}
+
+.producto-link img:hover {
+    transform: scale(1.05); /* Agranda la imagen al 110% */
+}
+
